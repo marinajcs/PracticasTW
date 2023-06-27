@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7</title>
+    <style>
+        section h2 {
+            font-size: larger;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+            list-style: disc;
+        }
+
+        nav ul li::before {
+            color: #bb272c;
+            content: '\2192';
+            margin-right: 3px;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: rgb(77, 69, 69);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff5a5f;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Ejercicio 7: Encuesta de opinión</h2>
+        <p>Debe empezar por la pregunta 1 para poder avanzar de pregunta,
+            si no será redirigido automáticamente al principio del cuestionario.
+        </p>
+        <nav>
+            <ul>
+                <li><a href="pregunta1.php">Pregunta 1</a></li>
+                <li><a href="pregunta2.php">Pregunta 2</a></li>
+                <li><a href="pregunta3.php">Pregunta 3</a></li>
+                <li><a href="pregunta4.php">Pregunta 4</a></li>
+                <li><a href= "pregunta5.php">Pregunta 5</a></li>
+                <li><a href="resultado.php">Resultados</a></li>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+{
+    "es": {
+        "ElegirIdioma": "Elija idioma",
+        "Espanol": "Español",
+        "Ingles": "Inglés",
+        "Frances": "Francés",
+        "Bienvenida": "Hola, bienvenido a la web. Usted está viendo esta información en castellano.",
+        "Cambio": "Puede cambiar el idioma en el formulario adjunto.",
+        "Aplicar": "Aplicar cambios",
+        "Enlace": "Cargar de nuevo esta página"
+    },
+    "en": {
+        "ElegirIdioma": "Choose language",
+        "Espanol": "Spanish",
+        "Ingles": "English",
+        "Frances": "French",
+        "Bienvenida": "Hello, welcome to the web. You are viewing this information in english.",
+        "Cambio": "You can change the language in the attached form.",
+        "Aplicar": "Apply changes",
+        "Enlace": "Reload this page again"
+    },
+    "fr": {
+        "ElegirIdioma": "Choisissez la langue",
+        "Espanol": "Espagnol",
+        "Ingles": "Anglais",
+        "Frances": "Français",
+        "Bienvenida": "Bonjour, bienvenue sur le web. Vous consultez ces informations en français.",
+        "Cambio": "Vous pouvez changer la langue dans le formulaire ci-joint.",
+        "Aplicar": "Appliquer les modifications",
+        "Enlace": "Recharger cette page"
+    }
+}

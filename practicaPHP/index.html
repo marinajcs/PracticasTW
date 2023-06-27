@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 5: PHP</title>
+    <style>
+        h1#index {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #cc1e23;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        section h2 {
+            font-size: larger;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+            list-style: disc;
+        }
+
+        nav ul li::before {
+            color: #bb272c;
+            content: '\2192';
+            margin-right: 3px;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: rgb(77, 69, 69);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff5a5f;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="index">Índice de práctica 5 (PHP)</h1>
+    <section>
+        <h2>Sesión 1: Introducción a PHP</h2>
+        <nav>
+            <ul>
+                <li><a href="2_holamundo.php">Ejercicio 2: Hola mundo</a></li>
+                <li><a href="3-1_ver_informacion.php">Ejercicio 3.1: Mostrar variables</a></li>
+                <li><a href="3-2_diferencias.php">Ejercicio 3.2: Diferencias entre SCRIPT_NAME y PHP_SELF</a></li>
+                <li><a href="procesaerror.php">Ejercicio 3.3: Diferencias entre la URI y el script que se está ejecutando</a></li>
+                <li><a href="4_calculadora.php">Ejercicio 4: Calculadora</a></li>
+                <li><a href="5_formValidacion.php">Ejercicio 5: Formularios y validación en el servidor</a></li>
+                <li><a href="5-1_saneamientoDatos.php">Ejercicio 5.1: Inyección de código y saneamiento de datos</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <h2>Sesión 2: Estableciendo conexiones <em>"stateful"</em></h2>
+        <nav>
+            <ul>
+                <li><a href="6_preferenciasWeb.php">Ejercicio 6: Establecer preferencias en un sitio web</a></li>
+                <li><a href="7_encuestaOpinion/index.html">Ejercicio 7: Encuesta de opinión</a></li>
+                <li><a href="8_variablesSesion.php">Ejercicio 8: Almacenamiento de datos en variables de sesión</a></li>
+                <li><a href="9_reenvioForms.php">Ejercicio 9: Problema con el reenvío de formularios</a></li>
+                <li><a href="10_tresEnRaya.php">Ejercicio 10: Tres en raya</a></li>
+            </ul>
+        </nav>
+    </section>
+
+</body>
+
+</html>
