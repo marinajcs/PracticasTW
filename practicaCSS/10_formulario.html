@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 10</title>
+    <style>
+        .formulario {
+            border: 2px solid gray;
+            padding: 10px;
+            padding-top: 0%;
+        }
+
+        .subform {
+            border: 1px solid gray;
+            padding: 5px;
+            display: flex;
+            margin: 0px 10px 0px 10px;
+        }
+
+        .subform h1 {
+            width: 15%;
+            text-align: right;
+        }
+
+        .datos {
+            margin: 0px 3px 0px 7px;
+            border-left: 1px solid gray;
+            padding: 0px 3px 0px 7px;
+            color: gray;
+            font-size: smaller;
+            width: 50%;
+        }
+
+        .entrada label, .entrada input {
+            display: block;
+        }
+
+        .entrada input {
+            width: 100%;
+        }
+
+        .entrada select {
+            width: 80%;
+        }
+
+        .ayuda {
+            display: none;
+            font-size: small;
+            text-align: left;
+            width: 20%;
+            margin-left: 10px;
+        }
+
+        .subform:hover {
+            background-color: darkgrey;
+        }
+
+        .subform:hover .ayuda {
+            display: block;
+            color: green;
+        }
+
+        .formulario h1 {
+            font-size: larger;
+        }
+
+        .subform h1 {
+            margin-left: 20px;
+            font-size: smaller;
+            color: gray;
+        }
+
+        .botones {
+            text-align: center;
+            border: 1px solid gray;
+            padding: 3px;
+            margin: 5px 20% 3px 20%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="formulario">
+        <h1>Datos del usuario</h1>
+        <form method="post" action="">
+            <div class="subform">
+                <h1>Identificación</h1>
+                <div class="datos">
+                    <div class="entrada">
+                        <label for="nombre">Nombre</label>
+                        <input name="nombre" value="" />
+                    </div>
+                    <div class="entrada">
+                        <label for="apellidos">Apellidos</label>
+                        <input name="apellidos" value="" />
+                    </div>
+                    <div class="entrada">
+                        <label for="dni">DNI</label>
+                        <input name="dni" value="" />
+                    </div>
+                </div>
+                <div class="ayuda">
+                    <p>Datos identificativos del usuario. Aunque no son obligatorios, es conveniente que
+                        nos los diga todos.</p>
+                </div>
+            </div>
+            <div class="subform">
+                <h1>Dirección postal</h1>
+                <div class="datos">
+                    <div class="entrada">
+                        <label for="provincia">Provincia</label>
+                        <select name="provincia">
+                            <option value="almeria">Almería</option>
+                            <option value="granada" selected>Granada</option>
+                            <option value="malaga">Málaga</option>
+                        </select>
+                    </div>
+                    <div class="entrada">
+                        <label for="poblacion">Poblacion</label>
+                        <input name="poblacion" value="" />
+                    </div>
+                    <div class="entrada">
+                        <label for="calle">Calle y número</label>
+                        <input name="calle" value="" />
+                    </div>
+                </div>
+                <div class="ayuda">
+                    <p>Datos relacionados con su dirección postal.</p>
+                </div>
+            </div>
+            <div class="botones">
+                <input type="submit" value="Enviar datos">
+                <input type="reset" value="Borrar formulario">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

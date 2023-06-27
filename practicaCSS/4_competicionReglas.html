@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4</title>
+    <style>
+        /* Regla 1 - Especificidad: 1 0 0 */
+        #ftecnica {
+            color: gold;
+        }
+
+        /* Regla 2 - Especificidad: 0 0 1 */
+        section {
+            color: green;
+        }
+
+        /* Regla 3 - Especificidad: 0 1 2 */
+        li>span:not(:first-child) {
+            color: aqua;
+        }
+
+        /* Regla 4 - Especificidad: 0 1 1 */
+        span:nth-child(2) {
+            color: red;
+        }
+
+        /* Regla 5 - Especificidad: 0 0 2 */
+        li span {
+            color: blue;
+        }
+
+        /* Regla 6 - Especificidad: 0 1 0 */
+        .enfasis {
+            color: pink;
+        }
+
+        /* Regla 7 - Es incorrecta */
+        /*span<li:not(:nth-last-child) {
+            color: yellow;
+        }*/
+        
+        /* Regla 8 - Especificidad: 0 1 1 */
+        li:nth-child(2n) {
+            color: salmon;
+        }
+
+        /* Regla 9 - Especificidad: 1 0 0 */
+        #bryan {
+            color: gray;
+        }
+
+        /* Regla 10 - Especificidad: 0 1 3 */
+        section>ul>li.main {
+            color: royalblue;
+        }
+
+        /* Regla 11 - Especificidad: 1 0 1 */
+        #ftecnica h2 {
+            color: plum;
+        }
+
+        /* Regla 12 - Especificidad: 0 0 2 */
+        section h2 {
+            color: skyblue;
+        }
+
+        /* Regla 13 - Especificidad: 1 1 3 */
+        section#ftecnica li li:last-child {
+            color: sienna;
+        }
+
+        /* Regla 14 - Especificidad: 1 0 0 */
+        #betsy {
+            color: darkblue;
+        }
+
+        /* Regla 15 - Especificidad: 0 1 5 */
+        main>section>section>ul>li:last-child {
+            color: silver;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Breaking Bad</h1> <!-- Reglas que afectan: ninguna | Color: negro -->
+        <h2>Serie de televisión</h2> <!-- Reglas que afectan: ninguna | Color: negro -->
+    </header>
+    <main>
+        <section>
+            <h2>Argumento:</h2> <!-- Reglas que afectan: 2 y 12 | Color: skyblue -->
+            <p>Walter White (Bryan Cranston) es un frustrado
+                profesor de química en un instituto, padre de un joven
+                discapacitado y con una mujer (Anna Gunn) embarazada.</p> <!-- Reglas que afectan: 2 | Color: green -->
+        </section>
+        <section id="ftecnica">
+            <h2>Ficha técnica:</h2> <!-- Reglas que afectan: 1, 2, 11 y 12 | Color: plum -->
+            <ul>
+                <li>Año: <!-- Reglas que afectan: 1 y 2 | Color: gold -->
+                    <span class="enfasis">2008</span> <!-- Reglas que afectan: 1, 2, 5 y 6 | Color: pink -->
+                </li>
+                <li>País: <!-- Reglas que afectan: 1, 2 y 8 | Color: salmon -->
+                    <span>EEUU</span> <!-- Reglas que afectan: 1, 2, 5 y 8  | Color: blue -->
+                </li>
+                <li>Idiomas: <!-- Reglas que afectan: 1 y 2 | Color: gold -->
+                    <span>Inglés</span> <!-- Reglas que afectan: 1, 2 y 5 | Color: blue -->
+                    , <!-- Reglas que afectan: 1, 2 y 6 | Color: pink -->
+                    <span>Español</span> <!-- Reglas que afectan: 1, 2, 3, 4 y 5 | Color: aqua -->
+                </li>
+                <li>
+                    <span>Productores ejecutivos:</span> <!-- Reglas que afectan: 1, 2, 5 y 8 | Color: negro -->
+                    <ul>
+                        <li>Vince Gilligan</li> <!-- Reglas que afectan: 1, 2 y 8 | Color: salmon -->
+                        <li>Mark Johnson</li> <!-- Reglas que afectan: 1, 2 y 8 | Color: salmon -->
+                        <li>Michelle MacLaren</li> <!-- Reglas que afectan: 1, 2, 8 y 13 | Color: sienna -->
+                    </ul>
+                </li>
+            </ul>
+            <section>
+                <h2>Protagonistas:</h2> <!-- Reglas que afectan: 1, 2, 11 y 12  | Color: plum -->
+                <ul>
+                    <li id="bryan" class="main">Bryan Cranston</li> <!-- Reglas que afectan: 1, 2, 9 y 10 | Color: gray -->
+                    <li>Aaron Paul</li> <!-- Reglas que afectan: 1, 2 y 8 | Color: salmon -->
+                    <li>Anna Gunn</li> <!-- Reglas que afectan: 1 y 2 | Color: green -->
+                    <li>Dean Norris</li> <!-- Reglas que afectan: 1, 2 y 8 | Color: salmon -->
+                    <li id="betsy">Betsy Brandt</li> <!-- Reglas que afectan: 1, 2, 14 y 15 | Color: darkblue -->
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Datos obtenidos de <!-- Reglas que afectan: ninguna | Color: negro -->
+            <span class="enfasis">Wikipedia</span> <!-- Reglas que afectan: 6 | Color: negro -->
+            y otros sitios <!-- Reglas que afectan: ninguna | Color: negro -->
+        </p>
+    </footer>
+</body>
+
+</html>

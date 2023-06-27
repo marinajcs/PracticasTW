@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 9-12</title>
+
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Datos de usuario/a</h1>
+
+    <form action="https://void.ugr.es/~marinacarranza2223/practicaHTML/procesar.php" method="POST">
+        <label>Usuario/a: <input type="text" name="nombre" required placeholder="Obligatorio: id de usuario"
+                value="pepemartin" readonly></label>
+        <label>Clave: <input type="password" name="password" placeholder="Escriba su clave" value="miclave"
+                readonly></label>
+        <label>Nacionalidad: <input type="text" name="nationality" value="España" readonly></label>
+        <label>Email: <input type="email" name="email" placeholder="Escriba su email" value="pepemartin@miservidor.com"
+                readonly></label>
+        <label>Sexo:
+            <select name="gender" disabled>
+                <option selected>Masculino</option>
+                <option>Femenino</option>
+                <option>No binario</option>
+                <option>No deseo responder</option>
+            </select>
+        </label>
+        <label>Opciones:
+            <select name="option" disabled>
+                <option selected value="TOTAL">Acepta el almacenamiento de mis datos y el envío a terceros</option>
+                <option value="PARCIAL">Acepta el almacenamiento de mis datos pero no el envío a terceros</option>
+                <option value="NINGUNO">No acepta el almacenamiento ni el envío de datos a terceros</option>
+            </select>
+        </label>
+        <label>Idioma para comunicaciones:
+            <input type="radio" name="idioma" value="ESP" disabled>
+            Español
+            <input type="radio" name="idioma" value="ENG" checked disabled>
+            Inglés
+            <input type="radio" name="idioma" value="FR" disabled>
+            Francés
+        </label>
+        <label>Aficiones:
+            <input type="checkbox" name="aficiones" value="musica" disabled>
+            La música
+            <input type="checkbox" name="aficiones" value="leer" checked disabled>
+            Leer libros
+            <input type="checkbox" name="aficiones" value="cine" disabled>
+            El cine
+            <input type="checkbox" name="aficiones" value="deporte" disabled>
+            El deporte
+        </label>
+        <label>Fecha de nacimiento:<input type="date" name="fecha" value="2000-01-01" readonly></label>
+        <label>¿Cuándo es semana santa este año?: <input type="week" name="semana" value="2023-W18" readonly></label>
+        <label><input type="hidden" name="version" value="v9.11"></label>
+        <input type="submit" name="enviar" value="Enviar datos">
+    </form>
+    <p>
+        
+    </p>
+</body>
+
+</html>

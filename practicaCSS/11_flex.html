@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 11</title>
+    <style>
+        .titulo {
+            text-align: center;
+            background-color: aquamarine;
+            margin-bottom: 0%;
+        }
+
+        .menu {
+            display: inline-block;
+            background-color: burlywood;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            width: 100%;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0% 0% 20px 6px;
+        }
+
+        .menu li {
+            float: left;
+            margin-right: 9px;
+            margin-top: 0%;
+            padding-top: 0%;
+        }
+
+        .menu li a {
+            text-decoration: none;
+        }
+
+        .galeria {
+            height: auto;
+            width: auto;
+            background-color: gray;
+        }
+
+        .continentes {
+            background-color: grey;
+            float: right;
+            height: 100%;
+            margin: 0px 0px 0px 5px;
+            width: 120px;
+        }
+
+        .continentes ul {
+            list-style-type: none;
+            height: 100%;
+        }
+
+        .continentes li {
+            margin: 0% 3px 0% 0%;
+            padding: 0%;
+        }
+
+        .fila {
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            height: 100%;
+            justify-content: center;
+            background-color: white;
+        }
+
+        .fila .imagen {
+            border: 1px solid black;
+            margin: 6px;
+            text-align: center;
+            height: auto;
+        }
+
+        h2 {
+            margin: 0%;
+            border: 0%;
+            padding: 0%;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            background-color: greenyellow;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 class="titulo">
+        <img src="https://seeklogo.com/images/P/prague-zoo-logo-A4F70B77B5-seeklogo.com.png" height="50" width="50">
+        Zooweb
+    </h1>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Animales</a></li>
+            <li><a href="#">Localizaciones</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="galeria">
+        <aside class="continentes">
+            <ul>
+                <li>Asia</li>
+                <li>África</li>
+                <li>América del Norte</li>
+                <li>América del Sur</li>
+                <li>Antártida</li>
+                <li>Europa</li>
+                <li>Oceanía</li>
+            </ul>
+        </aside>
+
+        <div class="fila">
+            <div class="imagen">
+                <img src="https://www.ngenespanol.com/wp-content/uploads/2023/01/tucan-pico-canoa-el-ave-que-extiende-sus-colores-de-mexico-a-venezuela.jpg"
+                    height="60" width="100">
+                <h2>
+                    Tucán
+                </h2>
+            </div>
+            <div class="imagen">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/800px-Lion_waiting_in_Namibia.jpg"
+                    height="110" width="170">
+                <h2>
+                    León
+                </h2>
+            </div>
+
+            <div class="imagen">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Sumatratiger-004.jpg/220px-Sumatratiger-004.jpg"
+                    height="120" width="90">
+                <h2>
+                    Tigre
+                </h2>
+            </div>
+            <div class="imagen">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Giraffa_camelopardalis_reticulata_01.JPG"
+                    height="170" width="100">
+                <h2>
+                    Jirafa
+                </h2>
+            </div>
+            <div class="imagen">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/250px-Koala_climbing_tree.jpg"
+                    height="60" width="60">
+                <h2>
+                    Koala
+                </h2>
+            </div>
+            <div class="imagen">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/European_Common_Frog_Rana_temporaria_%28cropped%29.jpg"
+                    height="90" width="135">
+                <h2>
+                    Rana
+                </h2>
+            </div>
+            <div class="imagen">
+                <img src="https://s.libertaddigital.com/2022/11/11/vaca-.jpg" height="75" width="120">
+                <h2>
+                    Vaca
+                </h2>
+            </div>
+            <div class="imagen">
+                <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/2355.600x450.jpg?w=1900&h=1425"
+                    height="100" width="120">
+                <h2>
+                    Llama
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>(C) Tecnoweb</p>
+    </footer>
+</body>
+
+</html>

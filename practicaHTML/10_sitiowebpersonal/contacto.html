@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Página de contacto</h1>
+
+    <section>
+        <h2 id="index">Índice</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página de entrada</a></li>
+                <li><a href="profesional.html">Página web profesional</a></li>
+                <li><a href="personal.html">Página web personal</a></li>
+            </ul>
+        </nav>
+    </section>
+    <img src="yoshi.png" height="125" width="125">
+
+    <section>
+        <fieldset>
+            <legend>Formulario de contacto</legend>
+            <form action="https://void.ugr.es/~marinacarranza2223/practicaHTML/procesar.php" method="POST">
+                <label>Nombre: <input type="text" name="nombre" required placeholder="Obligatorio: nombre"></label>
+                <label>Email: <input type="email" name="email" placeholder="Escriba su email"></label>
+                <label>Texto de consulta: <input type="text" name="consulta" placeholder="Escriba su texto de consulta" size="50"
+                        required></label>
+                <input type="submit" name="enviar" value="Enviar">
+            </form>
+        </fieldset>
+    </section>
+    <section>
+        <fieldset>
+            <legend>Redes sociales</legend>
+            <p><a href="https://www.instagram.com/marinajcs78/"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+                        height="60" width="60"></a><a href="https://elcaminotrazado.wordpress.com/"> <img
+                        src="https://cdn-icons-png.flaticon.com/512/174/174881.png" height="60" width="60"></a>
+                <a href="https://t.me/marinajcs"> <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/480px-Telegram_logo.svg.png"
+                        height="60" width="60"></a>
+            </p>
+        </fieldset>
+    </section>
+    
+    <div id="footer">
+        <footer>
+            <p>Autoría: Marina Jun Carranza Sánchez</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

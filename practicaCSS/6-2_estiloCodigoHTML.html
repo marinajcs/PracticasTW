@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6.1</title>
+    <style>
+        nav {
+            display: flex;
+            width: 80%;
+            border: 5px solid black;
+            text-align: center;
+            background-color: rgb(179, 173, 173);
+        }
+
+        nav,
+        p {
+            padding: 10px;
+        }
+
+        .primero {
+            width: 20%;
+            border: 5px solid red;
+            text-align: left;
+            margin: 0%;
+        }
+
+        .medio {
+            width: 60%;
+            border: 5px solid green;
+            text-align: center;
+            margin: 0%;
+        }
+
+        .final {
+            width: 20%;
+            border: 5px solid purple;
+            text-align: right;
+            margin: 0%;
+        }
+
+        .primero::before{
+            content: "\00ab";
+        }
+        
+        .final::after {
+            content: "\00bb";
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <p class="primero">Anterior</p>
+        <p class="medio">Medio</p>
+        <p class="final">Siguiente</p>
+    </nav>
+</body>
+
+</html>

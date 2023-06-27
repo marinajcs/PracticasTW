@@ -1,0 +1,43 @@
+.fila_col1, .fila_col2, .fila_col3 {
+    margin: 10px;
+    text-align: center;
+}
+
+.fila_col3 .imagen {
+    margin: 1px;
+    width: calc(31% - 10px);
+    display: inline-block;
+}
+
+.fila_col2 .imagen {
+    margin: 1px;
+    width: calc(48.79% - 10px);
+    display: inline-block;
+}
+
+.fila_col1 .imagen {
+    margin: 1px;
+    width: calc(100% - 10px);
+    display: inline-block;
+}
+
+.imagen {
+    width: auto;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.imagen img {
+    border: 1px solid gray;
+    padding: 5px;
+    width: calc(100% - 11px);
+}
+
+h2 {
+    margin: 0%;
+    border: 0px;
+    padding: 0%;
+    text-align: center;
+}

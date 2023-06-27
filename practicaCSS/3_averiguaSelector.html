@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio</title>
+    <style>
+        * {
+            color: darkred;
+            font-family: arial;
+        }
+        /* Todos los elementos de la página */
+
+        em {
+            color: orchid;
+        }
+        /* Todos los elementos em de la página */
+
+        div p {
+            color: burlywood;
+        }
+        /* Cualquier párrafo que sea descendiente de algún div (a cualquier nivel) */
+        
+        .especial {
+            background-color: yellow;
+        }
+        /* Cualquier elemento de clase "especial" */
+
+        .segunda span {
+            font-size: 1.5em;
+        }
+        /* Los span descendientes de elementos de clase "segunda" */
+        
+        section h2, section h3 {
+            font-family: impact;
+        }
+        /* Cualquier título de sección */
+
+        section#primera h2, section#primera h3{
+            color: blue;
+        }
+        /* El título de la sección con id "primera" */
+
+        .section {
+            border: 1px solid red;
+        }
+        /* Elementos con clase "section" */
+
+        a {
+            text-decoration: none;
+            border: 1px solid black;
+            color: red;
+        }
+        /* Cualquier enlace */
+
+        a:hover {
+            color: lightgray;
+        }
+        /* Estilo de los enlaces al pasar el cursor por encima */
+
+        a:visited {
+            color: green;
+        }
+        /* Enlaces visitados */
+
+        p em{
+            padding: 0.7em;
+            font-family: impact;
+        }
+        /* Elemento de tipo em pero solo si están dentro de un párrafo */
+        
+        section > * {
+            margin-left: 20px;
+        }
+        /* Elementos de primer nivel dentro de section */
+
+        :not(div) > p {
+            font-style: italic;
+        }
+        /* Párrafos que no son descencientes directos de un div */
+
+        div p:first-of-type{
+            background-color: lightblue;
+        }
+        /* El primer párrafo dentro de un div */
+
+        div p:first-child {
+            background-color: gray;
+        }
+        /* El primer hijo de un div si es de tipo p */
+
+        p strong:nth-of-type(3){
+            background-color: aqua;
+        }
+        /* El tercer strong de cualquier párrafo */
+
+        p strong:nth-last-of-type(2){
+            background-color: blue;
+        }
+        /* El penúltimo strong de cualquier párrafo */
+
+        :not(header) p strong:first-child{
+            font-size: 2em;
+        }
+        /* El primer strong de cualquier párrafo que no esté dentro de header */
+            
+        article * {
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+        /* Cualquier elemento descendiente de un article */
+
+        article *:not(:first-child, :last-child){
+            padding: 10px;
+        }
+        /* Descendientes de article excepto el primero y el último */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lorem Ipsum</h1>
+        <p><span>Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. <strong>Donec vulputate</strong>
+            magna nec condimentum tempor. <strong>Praesent</strong> purus elit, sagittis sit amet metus sed, <a
+                href="http://www.ugr.es">posuere consequat</a> ante. Maecenas ac nibh justo. Duis eget posuere diam.
+            Duis nisl leo, sagittis porttitor bibendum ut, <strong>dapibus</strong> id nulla.</p>
+    </header>
+    <main>
+        <section id="primera">
+            <h2>Aliquam varius</h2>
+            <div>
+                <h3>Nulla augue</h3>
+                <p>Aliquam varius dapibus ornare. Suspendisse <a href="http://noexiste.com/desconocido.html">venenatis</a> at
+                    tellus eu auctor. Aliquam mollis, dolor viverra iaculis fringilla, risus metus rutrum felis, in
+                    <em>mattis massa</em> ante eu purus. <strong>Vestibulum rhoncus</strong> justo et lacus ornare hendrerit.
+                    Nulla pharetra, est vitae semper pulvinar, magna nibh venenatis magna, eu vestibulum tortor ex vel ante.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>Nulla augue</h2>
+            <div class="segunda">
+                <p>Nulla augue <span>lorem</span>, varius nec dapibus et, <a href="https://www.ugr.es">vestibulum eget
+                    velit</a>. Maecenas interdum facilisis ligula, ut <span>pellentesque nunc ultrices</span> at.
+                    Cras aliquet leo dui, nec tincidunt nisl consectetur id.</p>
+            </div>
+            <div class="segunda">
+                <p>Proin bibendum, dui vel <em class="especial">porta</em> porttitor, neque <em>dolor</em> volutpat
+                    metus, id aliquam ligula sem nec arcu. Ut <em>suscipit</em> elit dui. Fusce ut massa et elit luctus gravida
+                    sed scelerisque eros. Mauris pretium euismod velit non porta. Donec ullamcorper nulla sed <em>ipsum</em>
+                    volutpat, id ultricies mi suscipit. Morbi mattis elementum ante, non porttitor eros.</p>
+                <p>Nam eget arcu quis nisi pretium ultricies. Cras volutpat orci nibh, non laoreet <span>urna
+                    euismod</span> eget. Donec et orci vel risus pulvinar blandit. Donec in nisi suscipit ante dignissim pellentesque
+                    ac viverra urna. Curabitur pretium ac erat ut varius.</p>
+            </div>
+        </section>
+        <div class="section">
+            <p>Integer gravida et odio id bibendum. Suspendisse pellentesque neque quis tincidunt pharetra. Ut non arcu
+                auctor, ultrices quam id, malesuada mauris.</p>
+            <div>
+                <p>Nam eget arcu quis nisi pretium ultricies. Cras volutpat orci nibh, non laoreet urna euismod eget.
+                    Donec et orci vel risus pulvinar blandit.</p>
+                <p>Morbi faucibus scelerisque urna vitae mattis. Curabitur in porta felis. <em>Donec nec nunc
+                    venenatis</em>, finibus ipsum non, rhoncus elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; </p>
+            </div>
+            <p>Donec congue eros at luctus semper. Donec vitae augue ut libero lobortis tincidunt consectetur porta
+                ex.</p>
+        </div>
+        <article>
+            <h2>Phasellus porttitor vulputate urna</h2>
+            <p>Quis mollis massa facilisis id. Curabitur tincidunt vel leo vitae maximus. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            <p>Ut semper mollis felis non congue. Nam id <span>nibh rutrum</span>, luctus elit ut, rutrum lorem. Proin
+                at tellus urna. Mauris malesuada ex nulla.</p>
+            <p>Cras vitae nunc vulputate, aliquet lorem ut, mollis turpis. In vel dignissim ipsum. Sed blandit libero
+                vitae mi semper, id facilisis sapien finibus.</p>
+            <p>Curabitur commodo nulla massa, auctor dapibus dolor aliquam id. Donec vel dolor sit amet mauris facilisis
+                luctus nec et elit. Proin tristique sem et tristique malesuada.</p>
+            <section>
+                <h3>Sed blandit ipsum</h3>
+                <ul>
+                    <li>Maecenas viverra est sit amet metus sodales</li>
+                    <li>Nunc eget arcu purus</li>
+                    <li>Donec consectetur aliquam quam</li>
+                </ul>
+            </section>
+        </article>
+        <p class="especial">Quisque quis luctus sapien. Nullam euismod accumsan molestie. Maecenas risus nunc,
+            tincidunt in placerat lobortis, sollicitudin ac elit. <strong>Cras</strong> posuere semper
+            <span>lorem</span>, ac semper sem. Sed odio <span>lorem</span>, ultricies eu congue semper, imperdiet eget mi. Nullam faucibus
+            malesuada quam, non feugiat dolor eleifend eget.
+        </p>
+        <p>Etiam eu diam augue. Donec facilisis sed mauris vitae pellentesque.</p>
+    </main>
+</body>
+
+</html>

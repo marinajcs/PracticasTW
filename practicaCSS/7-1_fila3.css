@@ -1,0 +1,31 @@
+.fila3 {
+    margin: 10px;
+    text-align: center;
+}
+
+.fila3 .imagen {
+    margin: 1px;
+    width: calc(30% - 10px);
+    display: inline-block;
+}
+
+.imagen {
+    width: auto;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.imagen img {
+    border: 1px solid gray;
+    padding: 5px;
+    width: calc(100% - 11px);
+}
+
+h2 {
+    margin: 0%;
+    border: 0px;
+    padding: 0%;
+    text-align: center;
+}

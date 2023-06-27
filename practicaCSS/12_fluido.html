@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 12</title>
+    <style>
+        h1 {
+            background-color: rgb(52, 52, 255);
+            color: white;
+            margin: 0%;
+            padding: 8px 0% 1px 10px;
+        }
+
+        h2 {
+            background-color: rgb(52, 52, 255);
+            color: white;
+            margin: 0%;
+            padding: 1px 0% 10px 10px;
+        }
+
+        h3 {
+            color: rgb(52, 52, 255);
+        }
+
+        .menu {
+            display: inline-block;
+            background-color: rgb(151, 151, 151);
+            width: calc(100% - 1px);
+            min-width: 500px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+        }
+
+        .menu li {
+            float: left;
+            margin-right: 12px;
+        }
+
+        .menu li:last-child {
+            margin-right: none;
+        }
+
+        .enlaces {
+            background-color: rgb(151, 151, 151);
+            float: right;
+            height: auto;
+            margin: 0px 0px 0px 5px;
+            width: 120px;
+        }
+
+        .enlaces ul {
+            list-style-type: square;
+            color: red;
+            height: 100%;
+        }
+
+        .enlaces li {
+            margin: 0% 3px 0% 0%;
+            padding: 0%;
+        }
+
+        .enlaces li a {
+            text-decoration: none;
+        }
+
+        .enlace li a:hover {
+            background-color: rgb(52, 52, 255);
+        }
+
+        .biografia {
+            min-width: 500px;
+        }
+
+        .imagen {
+            max-width: 75%;
+            min-width: 500px;
+            text-align: center;
+        }
+
+        .imagen img {
+            width: auto;
+            max-width: 75%;
+            min-width: 500px;
+
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(151, 151, 151);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>
+        Mi página web
+    </h1>
+    <h2>
+        Alan Turing
+    </h2>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#" class="activo">Página de inicio</a></li>
+        </ul>
+    </nav>
+
+    <aside class="enlaces">
+        <h3>
+            Enlaces
+        </h3>
+        <ul>
+            <li><a href="#">Sobre Padding</a></li>
+            <li><a href="#">Sobre Wimslow</a></li>
+            <li><a href="#">La máquina de Turing</a></li>
+            <li><a href="#">La máquina Enigma</a></li>
+            <li><a href="#">Bibliografía</a></li>
+        </ul>
+    </aside>
+    <article class="biografia">
+        <h3>
+            Biografía
+        </h3>
+        <p>
+            Alan Mathison Turing (Paddington, Londres; 23 de junio de 1912-Wilmslow, Cheshire; 7 de junio de 1954) fue
+            un matemático, lógico, informático teórico, criptógrafo, filósofo y biólogo teórico británico.<br>
+        </p>
+        <p>
+            Es considerado como uno de los padres de la ciencia de la computación y precursor de la informática moderna.
+            Proporcionó una influyente formalización de los conceptos de algoritmo y computación: la máquina de Turing.
+            Formuló su propia versión que hoy es ampliamente aceptada como la tesis de Church-Turing (1936).
+        </p>
+        <div class="imagen">
+            <img src="https://www.miguelgarciavega.com/wp-content/uploads/2014/12/alanturing2_portada.jpg">
+        </div>
+
+    </article>
+
+    <footer>
+        <p>Diseñado por MJCS</p>
+    </footer>
+</body>
+
+</html>
