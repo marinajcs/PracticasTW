@@ -1,0 +1,363 @@
+/* Fichero de estilo CSS del index.html */
+header {
+    background-color: rgb(238, 112, 127);
+    ;
+    color: white;
+    padding: 1px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 5px;
+}
+
+#imagen-container img {
+    max-width: 100%;
+    width: 85px;
+    height: auto;
+    margin: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    /* Combina los bordes adyacentes */
+    width: 100%;
+    /* Ancho de la tabla */
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    /* Estilo, ancho y color del borde */
+    padding: 8px;
+    /* Espacio interno entre el contenido y el borde */
+}
+
+#contenedor-incidencia {
+    border: 1px solid black;
+    margin: 8px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Alineación horizontal */
+}
+
+h1 {
+    padding-left: 30px;
+    padding-top: 7px;
+    text-align: center;
+}
+
+body {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    border: 2px solid black;
+    background-color: rgb(235, 217, 160);
+    padding: 5px 0;
+}
+
+nav p {
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: rgb(229, 198, 94);
+}
+
+main {
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column-reverse;
+    }
+}
+
+.welcome {
+    color: rgb(165, 80, 235);
+}
+
+.bienvenida {
+    height: 20%;
+    width: 60%;
+    justify-content: center;
+    color: rgb(165, 80, 235);
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid rgb(229, 198, 94);
+    flex-grow: 1;
+}
+
+section {
+    margin-left: 15px;
+    margin-right: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    text-align: justify;
+}
+
+.info_perfil {
+    text-align: center;
+    width: 40%;
+    background-color: rgb(235, 217, 160);
+    padding: 5px;
+    margin: 10px;
+}
+
+.info_perfil h3 {
+    color: rgb(165, 80, 235);
+}
+
+.login_title {
+    justify-content: center;
+    text-align: center;
+    color: rgb(165, 80, 235);
+}
+
+footer {
+    background-color: rgb(181, 244, 215);
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    display: inline-block;
+    height: 60%;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(148, 70, 212)
+}
+
+.copyright {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.manualUso {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.acercaDe {
+    text-align: right;
+    margin-right: 10%;
+}
+
+.manual {
+    background-color: rgb(235, 217, 160);
+    padding: 5px;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.manual h2 {
+    justify-content: center;
+    text-align: center;
+    color: rgb(165, 80, 235);
+}
+
+.copyr h2 {
+    justify-content: center;
+    text-align: center;
+    color: rgb(165, 80, 235);
+}
+
+.copyr {
+    background-color: rgb(235, 217, 160);
+    padding: 5px;
+    padding-left: 10px;
+    text-align: justify;
+    /* Texto justificado */
+}
+
+.nosotras {
+    background-color: rgb(235, 217, 160);
+    padding: 5px;
+    padding-left: 10px;
+    text-align: justify;
+    /* Texto justificado */
+}
+
+.nosotras h2 {
+    justify-content: center;
+    text-align: center;
+    color: rgb(165, 80, 235);
+}
+
+.gestBD {
+    background-color: rgb(235, 217, 160);
+    padding: 5px;
+    padding-left: 10px;
+    text-align: justify;
+    /* Texto justificado */
+    width: 60%;
+}
+
+.gestBD h2 {
+    justify-content: center;
+    text-align: center;
+    color: rgb(165, 80, 235);
+}
+
+.texto-botones {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: rgb(165, 80, 235);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 550;
+}
+
+.boton-container {
+    display: flex;
+    margin-bottom: 10px;
+    /* Ajusta el espacio entre cada botón según tus preferencias */
+}
+
+.todos-botones {
+    background-color: rgb(229, 198, 94);
+    margin: 5px;
+    padding: 7px;
+}
+
+/*Edición usuario*/
+.editUser label {
+    display: block;
+}
+
+.editUser h1 {
+    background-color: rgb(238, 112, 127);
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    width: 600px;
+}
+
+.editUser form {
+    background-color: rgb(235, 217, 160);
+    padding: 20px;
+    margin: 5px;
+    width: 600px;
+}
+
+.error {
+    color: red;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.entrada {
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.opciones {
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.editUser input {
+    height: 22px;
+}
+
+/* Nueva incidencia */
+.nincidencia label {
+    display: block;
+}
+
+.nincidencia h1 {
+    background-color: rgb(238, 112, 127);
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+    width: 61%;
+}
+
+.nincidencia form {
+    background-color: rgb(235, 217, 160);
+    padding: 20px;
+    margin: 5px;
+    width: 60%;
+}
+
+.error {
+    color: red;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.entrada {
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.descrip {
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.nincidencia textarea {
+    width: 700px;
+    height: 200px;
+}
+
+.nincidencia input[type="text"],
+textarea {
+    font-family: Arial, sans-serif;
+}
+
+.fotos {
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.nincidencia input {
+    height: 22px;
+}
